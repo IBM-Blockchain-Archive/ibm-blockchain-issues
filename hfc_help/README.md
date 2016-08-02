@@ -48,7 +48,7 @@ The goal is to run the HFC's unit test `chain-tests.js` which will deploy exampl
 1. Create `$GOPATH/src/github.com/chaincode_example02` folder
 	- copy `chaincode_example02.go` from this repo's help folder to the folder you just created
 
-1. Get get that **same** certificate again. [Download](https://blockchain-certs.mybluemix.net/) the one for your network. Most everyone will want to download `us.blockchain.ibm.com.cert`. People using a "High Secuirty Network" should grab the `zone.blockchain.ibm.com.cert`.
+1. Go download/copy that **same** certificate in step 3 again.
 	- copy it to `$GOPATH/src/github.com/chaincode_example02`
 	- rename it to `certificate.pem`
 
