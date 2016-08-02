@@ -8,13 +8,15 @@ The goal is to run the HFC's unit test `chain-tests.js` which will deploy exampl
 	> npm install hfc@0.5.0
 	```
 
+1. Browse to `./node_modules/hfc` (this will be referred to as the "root" of the hfc module)
+
 1. Open `./test/unit/test-util.js` and look for what you are setting as the "key value store" ie `chain.setKeyValStore(hfc.newFileKeyValStore('/tmp/keyValStore'));`
 	1. Find your key value store locally and make sure the path to the folder exists
 		- (in windows default is) C:\tmp\keyValStore
 	1. Also delete anything in this `keyValStore` folder (you should empty this out anytime you connect to a new network or switch users)
 
 1. Get your certificate. Go [download](https://blockchain-certs.mybluemix.net/) the one for your network. Most everyone will want to download `us.blockchain.ibm.com.cert`. People using a "High Secuirty Network" should grab the `zone.blockchain.ibm.com.cert`.
-	- copy it to `./` (the root of hfc folder, where package.json exists)
+	- copy it to `./` (the root of hfc module, where package.json exists)
 	- **double check** that the cert has a blank new line at the end of the cert
 
 1. Open `./test/unit/test-util.js`
@@ -48,7 +50,7 @@ The goal is to run the HFC's unit test `chain-tests.js` which will deploy exampl
 1. Create `$GOPATH/src/github.com/chaincode_example02` folder
 	- copy `chaincode_example02.go` from this repo's help folder to the folder you just created
 
-1. Go download/copy that **same** certificate in step 3 again.
+1. Go download/copy that **same** certificate in step 4 again.
 	- copy it to `$GOPATH/src/github.com/chaincode_example02`
 	- rename it to `certificate.pem`
 
