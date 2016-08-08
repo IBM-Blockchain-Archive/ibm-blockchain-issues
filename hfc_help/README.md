@@ -44,6 +44,7 @@ The goal is to run the HFC's unit test `chain-tests.js` which will deploy exampl
 1. Open `./test/unit/chain-tests.js`
 	- add `chain.setDeployWaitTime(80);` to line 32 below the `var chain`
 	- change `account: "bank_a"` to `account: "group1"` on **line 87**
+	- leave `affiliation: "00001"` as is
 	- set WebAppAdmin's password in chain-test.js **line 125**
 	- add `certificatePath: "/certs/blockchain-cert.pem"` to **line 225** (also add the trailing comma to the `args` line directly above)
 
